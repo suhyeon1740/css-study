@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #header {
+            background-image: url("banner.jpg");
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);            
+            font-weight: 300; 
+            /* padding: 150px 30px;  */
+            padding: 9.4rem 1.9rem;
+        }        
+        #header h1, #header strong {
+            font-size: 3rem;
+            /* font-size: 48px; */
+            font-weight: inherit;            
+        }
+        #header strong {
+            color: white;
+        }
+        #header p {
+            font-size: 1.2rem;
+            /* font-size: 20px; */
+            line-height: 1.5;
+            /* margin: 32px 0; */
+            margin: 2rem 0;
+        }
+        #header a {
+            color: white;
+            text-decoration: none;
+            background: #8ebebc;
+            /* padding: 15px 50px; */
+            padding: 1rem 3rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            /* font-size: 20px; */
+            display: inline-block; /*inline: 여백은 좌우만 반영되고 상하는 X */
+        }
+        @media(max-width:700px) {
+            html {
+                font-size: 14px;
+            }
+            #header br {
+                display: none;
+            }
+            #header p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <header>
+            <h1>
+                Hi! I'm <strong>Elly</strong>, a web developer
+            </h1>
+            <p>
+                <!-- 7단어, 8단어 -->
+                Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </header>
+        <a href="#">View more</a>        
+    </div>    
+</body>
+</html>
