@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+            margin: 50px;
+        }
+        div:nth-child(1) {
+            /* 오른쪽 10, 아래 10, 흐림과 번짐없이 검은색 그림자 */
+            box-shadow: 10px 10px 0 0 black;
+        }
+        div:nth-child(2) {
+            /* 왼쪽 10, 위 10, 흐림있고 그림자 번짐 */
+            box-shadow: -10px -10px 10px 10px black;
+        }
+        div:nth-child(3) {
+            /* 흐림있고 그림자 축소 */
+            box-shadow: 10px 10px 10px -10px black;
+        }        
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

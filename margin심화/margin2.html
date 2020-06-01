@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            margin-top: 100px;
+            border: 1px solid tomato;
+        }
+        #child {
+            margin-top: 50px;
+            background-color: powderblue;
+        }
+        /* 부모가 투명한 상태가 되면 (내용, 선 X) 자식과 부모의 마진은 겹친다. */
+        /* 부모와 자식 중 더 큰 값의 마진이 적용된다. */
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <!-- 1 -->
+        <div id="child">
+            Hello world
+        </div>
+    </div>
+</body>
+</html>

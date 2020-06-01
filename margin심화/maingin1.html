@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            border: 1px solid red;
+            margin: 100px;
+        }
+        h1:first-child {
+            margin: 50px;
+        }
+        /* 마진은 겹침 */
+        /* 위, 아래 중 더 큰 마진값이 적용됨
+        첫번째 h1을 두번째 마진보다 작게 50으로 해도 아래 h1 마진이 더 크기때문에 100이 적용 */
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <h1>Hello world</h1>
+</body>
+</html>
