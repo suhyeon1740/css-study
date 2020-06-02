@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        div {
+            border: solid tomato;            
+            height: 200px;
+        }
+        #container {
+            position: relative;
+            height: 400px;
+        }        
+        #child {
+            position: absolute;            
+            left: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        container
+        <div id="parent">
+            parent
+            <div id="child">child</div>
+        </div>    
+    </div>
+</body>
+</html>
