@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper > div {
+            background-color: orange;
+            border: 1px solid black;
+        }
+        .wrapper > div:nth-child(odd) {
+            background-color: indianred;
+        }
+        .wrapper {
+            display: grid;
+            margin: 30px;
+        }
+        .wrapper1 {
+            grid-template-columns: 100px 100px 100px
+        }
+        .wrapper2 {
+            grid-template-columns: 100px auto 100px
+        }
+        .wrapper3 {
+            /* free space: 사용 가능한 공간 */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <!-- 부모 컨테이너로 제어하려는 요소들 감싸주기 -->
+    <div class="wrapper">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="wrapper wrapper1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="wrapper wrapper2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="wrapper wrapper3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+</body>
+</html>

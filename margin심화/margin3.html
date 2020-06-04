@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #empty {
+            margin-top: 50px;
+            margin-bottom: 100px;
+            border: 1px solid tomato;
+        }
+        #normal {
+            margin-top: 100px;
+            background-color: powderblue;
+        }
+        /* 시각적인 요소가 없는 태그는 top과 bottom 중 값인 큰 쪽이 적용된다.
+        empty를 위 50, 아래 100으로 지정하고 선을 지우면 아래가 더 크기때문에 100px이 띄어진다. */
+    </style>
+</head>
+<body>
+    <div id="empty"></div>
+    <div id="normal">normal</div>
+</body>
+</html>
