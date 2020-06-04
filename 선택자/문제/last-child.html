@@ -6,16 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        p:last-child {
+        /* div의 자식 중 p태그 */
+        div:first-of-type p:last-of-type { 
             color: lime;
             background-color: black;
         }
+        /* last-child는 태그가 마지막이더라도 부모의 마지막 자식이 아니면 안됨 */
+        /* p:last-child {
+            color: lime;
+            background-color: black;
+        } */
     </style>
 </head>
 <body>
+    <h1>test</h1> 
+    <!-- div:first-child -->
     <div>
         <p>p:black</p>
         <p>p:lime</p>
+        <h2>aaa</h2>
     </div>
     <div>
         <p>p:black</p>                

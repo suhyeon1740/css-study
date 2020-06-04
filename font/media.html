@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        @media(max-width: 700px) {
+        /* width가 0 ~ 700까지 미디어쿼리 내용 적용 */
+        @media(max-width: 700px) { 
             html {
                 font-size: 12px;
             }
+            body {
+                /* background: black; */
+            }
+
+            /* 가로가 700보다 작으면 #px이 사라짐 */
         }        
         #px {
             font-size: 48px;
